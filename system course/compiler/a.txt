@@ -1,0 +1,16 @@
+data:
+data a[2]
+start:
+read ax
+mov cx,ax
+read ax
+mov dx,ax
+read ax
+mov ex,ax
+loop:
+if cx lt dx
+	read ax
+	mov a[0],ax
+	add cx,ex,cx
+	jmp loop:
+endif
